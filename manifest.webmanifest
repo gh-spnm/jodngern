@@ -1,13 +1,13 @@
 {
   "name": "จดเงิน รายรับรายจ่าย",
   "short_name": "จดเงิน",
-  "description": "จดรายรับรายจ่าย แยกหมวด ตั้งงบ สแกนสลิป สั่งด้วยเสียง",
+  "description": "จดรายรับรายจ่าย ปฏิทินรายวัน รายจ่ายประจำ สินทรัพย์ สั่งด้วยเสียง",
   "lang": "th",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#e8eef5",
-  "theme_color": "#e8eef5",
+  "background_color": "#f2ede6",
+  "theme_color": "#f2ede6",
   "icons": [
     { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
