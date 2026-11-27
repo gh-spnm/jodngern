@@ -1,5 +1,5 @@
 // จดเงิน service worker: app works offline; a new version shows on the next open.
-const V='jodngern-v3',CDN='jodngern-cdn';
+const V='jodngern-v4',CDN='jodngern-cdn';
 const SHELL=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./apple-touch-icon.png','./favicon-32.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(V).then(c=>c.addAll(SHELL)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==V&&k!==CDN).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
